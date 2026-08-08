@@ -15,6 +15,12 @@ concurrency:
   group: pages
   cancel-in-progress: false
 
+env:
+  GIT_AUTHOR_NAME: wiki-bot
+  GIT_AUTHOR_EMAIL: bot@ecust-origin.local
+  GIT_COMMITTER_NAME: wiki-bot
+  GIT_COMMITTER_EMAIL: bot@ecust-origin.local
+
 jobs:
   build:
     name: Build site
