@@ -144,13 +144,18 @@ git tag -l | head   # 检查 tag 是否齐
 ## 第 3 步:转让仓库(标准流程)
 
 ### 3.1 在 GitHub 网页上发起转让
-
 1. 打开 https://github.com/<you>/<repo>/settings
+![仓库示例](C:\Workspace\Doucuments\RM\docs\docs/assets/migration-guide/repo-example.png)
 2. 滚到最底下 "Danger Zone" → "Transfer ownership"
+![转移仓库](C:\Workspace\Doucuments\RM\docs\docs/assets/migration-guide/setting-tansfer.png)
 3. **New owner**: `ECUST-Origin`
 4. **New repository name**: 填 §2.2 决定的新名字
 5. 确认(会要求你输入仓库名二次确认)
-6. 等待几秒,会被重定向到新仓库页面
+![填写信息](C:\Workspace\Doucuments\RM\docs\docs/assets/migration-guide/transfer.png)
+6. 选择对应组别
+![选择组别](C:\Workspace\Doucuments\RM\docs\docs/assets/migration-guide/select-team.png)
+7. 等待几秒,会被重定向到新仓库页面
+![成功](C:\Workspace\Doucuments\RM\docs\docs/assets/migration-guide/success.png)
 
 转让完成后,GitHub 会自动:
 - 把所有 issue、PR、release、tag、wiki 一起迁过去
@@ -269,24 +274,23 @@ ECUST-Origin/
 ├── docs                          # 本 wiki 仓库(已存在)
 ├── recruitment                   # 招新资料
 ├── team-handbook                 # 队员手册
-├── mech-<robot>                  # 机械
-│   例: mech-hero / mech-sentry / mech-infantry
-├── embedded-<robot>              # 电控
-│   例: embedded-hero / embedded-engineering
-├── hardware-<board>              # 硬件
-│   例: hardware-driver-board / hardware-power-board
-├── vision-<robot>                # 视觉
-│   例: vision-infantry / vision-sentry
-├── navigation-<robot>            # 导航
-│   例: navigation-prototype
-├── software-<topic>              # 软件
-│   例: software-dashboard / software-recruitment-bot
+├── mech-<repo202x>                  # 机械
+│   例: mech-hero2026 / mech-sentry2026 / mech-infantry2026
+├── embedded-<repo202x>              # 电控
+│   例: embedded-hero2026 / embedded-engineering2026
+├── framework/hardware-<repo202x>              # 硬件
+│   例: framework-driver2026 / hardware-power-board2026
+├── vision-<repo202x>                # 视觉
+│   例: vision-infantry2026 / vision-sentry2026
+├── navigation-<repo202x>            # 导航
+│   例: navigation-prototype2026
+├── software-<repo202x>              # 软件
+│   例: software-dashboard2026 / software-recruitment-bot2026
 └── experiment-<name>             # 实验性项目,3 个月不动转 archive
 ```
 
 约定:
 - 全部小写,`-` 分隔
-- 不带年份(每年都通用的代码,不该每年改名)
 - 跨 team 联调项目归主负责 team
 - 退役机器人代码统一放 `ECUST-Origin-archive` 组织(不删,留作传承)
 
