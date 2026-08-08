@@ -97,6 +97,7 @@ extra:
 
 nav:
   - 首页: index.md
+  - 仓库迁移指南: migration-guide.md
   - 新人入门: getting-started.md
   - 机械组:
       - 概览: mechanical/index.md

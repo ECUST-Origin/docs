@@ -87,6 +87,7 @@ Material 主题支持:
 ```
 docs/
 ├── index.md             # 全站首页
+├── migration-guide.md   # 老队员仓库迁移指南
 ├── getting-started.md   # 新人入门
 ├── glossary.md          # 术语表
 ├── resources.md         # 资源链接
@@ -112,4 +113,5 @@ docs/
 ## 提问与反馈
 
 - 文档问题: 在 GitHub 上提 Issue,标签选 `documentation`
+- 还没把个人仓库迁到组织?看 [仓库迁移指南](docs/migration-guide.md)
 - 流程问题: 联系战队文档负责人
