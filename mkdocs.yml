@@ -1,0 +1,127 @@
+site_name: ECUST Origin 战队技术 Wiki
+site_description: RoboMaster ECUST-Origin 战队技术文档库 — 机械 / 电控 / 硬件 / 视觉 / 导航 / 软件
+site_url: https://ecust-origin.github.io/docs/
+repo_url: https://github.com/ECUST-Origin/docs
+repo_name: ECUST-Origin/docs
+edit_uri: edit/main/docs/
+
+docs_dir: docs
+site_dir: site
+
+theme:
+  name: material
+  language: zh
+  features:
+    - navigation.instant
+    - navigation.tracking
+    - navigation.tabs
+    - navigation.sections
+    - navigation.indexes
+    - navigation.top
+    - search.highlight
+    - search.share
+    - search.suggest
+    - content.code.copy
+    - content.code.annotate
+    - content.tabs.link
+    - content.tooltips
+    - toc.follow
+  palette:
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/brightness-7
+        name: 切换到深色模式
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/brightness-4
+        name: 切换到浅色模式
+  icon:
+    repo: fontawesome/brands/github
+    edit: material/pencil
+    view: material/eye
+
+markdown_extensions:
+  - admonition
+  - attr_list
+  - def_list
+  - footnotes
+  - md_in_html
+  - tables
+  - toc:
+      permalink: true
+      toc_depth: 4
+  - pymdownx.details
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+  - pymdownx.tabbed:
+      alternate_style: true
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - pymdownx.highlight:
+      anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - pymdownx.keys
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+  - pymdownx.smartsymbols
+  - pymdownx.caret
+  - pymdownx.tilde
+
+plugins:
+  - search:
+      lang: zh
+  - git-revision-date-localized:
+      enable_creation_date: true
+      type: date
+      fallback_to_build_date: true
+      enable_git_follow: false
+
+extra:
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/ECUST-Origin
+  generator: false
+
+nav:
+  - 首页: index.md
+  - 新人入门: getting-started.md
+  - 机械组:
+      - 概览: mechanical/index.md
+      - 底盘: mechanical/chassis.md
+      - 悬挂: mechanical/suspension.md
+      - 发射机构: mechanical/launcher.md
+  - 电控组:
+      - 概览: embedded/index.md
+      - 接线规范: embedded/wiring.md
+      - 运动控制: embedded/motion-control.md
+  - 硬件组:
+      - 概览: hardware/index.md
+      - PCB 设计: hardware/pcb.md
+      - 模块固件: hardware/firmware.md
+  - 视觉组:
+      - 概览: vision/index.md
+      - 自瞄: vision/auto-aim.md
+  - 导航组:
+      - 概览: navigation/index.md
+      - 定位: navigation/localization.md
+      - 路径规划: navigation/path-planning.md
+  - 软件组:
+      - 概览: software/index.md
+      - 客户端: software/client.md
+      - 网站: software/website.md
+      - 自制工具: software/tools.md
+  - 术语表: glossary.md
+  - 资源链接: resources.md
