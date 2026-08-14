@@ -145,17 +145,17 @@ git tag -l | head   # 检查 tag 是否齐
 
 ### 3.1 在 GitHub 网页上发起转让
 1. 打开 https://github.com/<you>/<repo>/settings
-![仓库示例](C:\Workspace\Doucuments\RM\docs\docs/assets/migration-guide/repo-example.png)
+![仓库示例](assets/migration-guide/repo-example.png)
 2. 滚到最底下 "Danger Zone" → "Transfer ownership"
-![转移仓库](C:\Workspace\Doucuments\RM\docs\docs/assets/migration-guide/setting-tansfer.png)
+![转移仓库](assets/migration-guide/setting-tansfer.png)
 3. **New owner**: `ECUST-Origin`
 4. **New repository name**: 填 §2.2 决定的新名字
 5. 确认(会要求你输入仓库名二次确认)
-![填写信息](C:\Workspace\Doucuments\RM\docs\docs/assets/migration-guide/transfer.png)
+![填写信息](assets/migration-guide/transfer.png)
 6. 选择对应组别
-![选择组别](C:\Workspace\Doucuments\RM\docs\docs/assets/migration-guide/select-team.png)
+![选择组别](assets/migration-guide/select-team.png)
 7. 等待几秒,会被重定向到新仓库页面
-![成功](C:\Workspace\Doucuments\RM\docs\docs/assets/migration-guide/success.png)
+![成功](assets/migration-guide/success.png)
 
 转让完成后,GitHub 会自动:
 - 把所有 issue、PR、release、tag、wiki 一起迁过去
