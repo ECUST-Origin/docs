@@ -95,12 +95,12 @@ gh repo list <你的个人账号> --limit 200 --json name,description,isPrivate 
 
 | 旧仓库名 | 新仓库名 | 归口 team |
 | --- | --- | --- |
-| `my-rm-2024-code` | `embedded-hero` | embedded |
-| `vision-test` | `vision-infantry` | vision |
-| `my-PCB-designs` | `framework/pcb-driver-board` | hardware |
-| `sentry2023` | `mech-sentry` | mechanical |
-| `my-slamexp` | `navigation-prototype` | navigation |
-| `rm-dashboard` | `software-dashboard` | software |
+| `my-rm-2024-code` | `embedded-hero2026` | embedded |
+| `vision-test` | `vision-infantry2026` | vision |
+| `my-PCB-designs` | `framework/pcb-driver-board2026` | hardware |
+| `sentry2023` | `mech-sentry2026` | mechanical |
+| `my-slamexp` | `navigation-prototype2026` | navigation |
+| `rm-dashboard` | `software-dashboard2026` | software |
 
 ### 2.3 把一个仓库拆成多个(可选,但推荐)
 
