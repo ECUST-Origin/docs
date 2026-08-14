@@ -21,7 +21,7 @@
 | --- | --- | --- |
 | `mechanical` | 机械设计 | `mech-<repo202x>` |
 | `embedded` | 电控 / 嵌入式代码 | `embedded-<repo202x>` |
-| `hardware` | PCB / 固件 | `hardware-<repo202x>` |
+| `hardware` | PCB / 固件 | `hardware-fw/pcb-<repo202x>` |
 | `vision` | 视觉 / 自瞄 | `vision-<repo202x>` |
 | `navigation` | 定位 / 路径规划 | `navigation-<repo202x>` |
 | `software` | 客户端 / 工具 | `software-<repo202x>` |
@@ -97,7 +97,7 @@ gh repo list <你的个人账号> --limit 200 --json name,description,isPrivate 
 | --- | --- | --- |
 | `my-rm-2024-code` | `embedded-hero2026` | embedded |
 | `vision-test` | `vision-infantry2026` | vision |
-| `my-PCB-designs` | `frameware/pcb-driver-board2026` | hardware |
+| `my-PCB-designs` | `hardware-fw/pcb-driver-board2026` | hardware |
 | `sentry2023` | `mech-sentry2026` | mechanical |
 | `my-slamexp` | `navigation-prototype2026` | navigation |
 | `rm-dashboard` | `software-dashboard2026` | software |
@@ -278,8 +278,8 @@ ECUST-Origin/
 │   例: mech-hero2026 / mech-sentry2026 / mech-infantry2026
 ├── embedded-<repo202x>              # 电控
 │   例: embedded-hero2026 / embedded-engineering2026
-├── frameware/hardware-<repo202x>              # 硬件
-│   例: frameware-driver2026 / hardware-power-board2026
+├── hardware-fw/pcb-<repo202x>              # 硬件
+│   例: hardware-fw/pcb-driver2026 / hardware-fw/pcb-power-board2026
 ├── vision-<repo202x>                # 视觉
 │   例: vision-infantry2026 / vision-sentry2026
 ├── navigation-<repo202x>            # 导航
