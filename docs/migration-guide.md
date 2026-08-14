@@ -19,12 +19,12 @@
 
 | Team slug | 负责 | 仓库命名 |
 | --- | --- | --- |
-| `mechanical` | 机械设计 | `mech-<robot>` |
-| `embedded` | 电控 / 嵌入式代码 | `embedded-<robot>` |
-| `hardware` | PCB / 固件 | `hardware-<board>` |
-| `vision` | 视觉 / 自瞄 | `vision-<robot>` |
-| `navigation` | 定位 / 路径规划 | `navigation-<robot>` |
-| `software` | 客户端 / 工具 | `software-<topic>` |
+| `mechanical` | 机械设计 | `mech-<repo202x>` |
+| `embedded` | 电控 / 嵌入式代码 | `embedded-<repo202x>` |
+| `hardware` | PCB / 固件 | `hardware-<repo202x>` |
+| `vision` | 视觉 / 自瞄 | `vision-<repo202x>` |
+| `navigation` | 定位 / 路径规划 | `navigation-<repo202x>` |
+| `software` | 客户端 / 工具 | `software-<repo202x>` |
 
 !!! tip "我不确定归哪个 team?"
     问自己:这个仓库最终主要被谁编译、谁 review、谁长期维护?那就是 ta 的 team。
@@ -97,7 +97,7 @@ gh repo list <你的个人账号> --limit 200 --json name,description,isPrivate 
 | --- | --- | --- |
 | `my-rm-2024-code` | `embedded-hero` | embedded |
 | `vision-test` | `vision-infantry` | vision |
-| `my-PCB-designs` | `hardware-driver-board` | hardware |
+| `my-PCB-designs` | `framework/pcb-driver-board` | hardware |
 | `sentry2023` | `mech-sentry` | mechanical |
 | `my-slamexp` | `navigation-prototype` | navigation |
 | `rm-dashboard` | `software-dashboard` | software |
